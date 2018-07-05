@@ -37,6 +37,12 @@ No need to worry about concurrency issues, this implementation is **thread safe*
     s.Empty() // remove all the elements from the set
 ```
 
+5. Contains
+
+```go
+    s.Contains(1) // will return true if 1 is in s
+```
+
 # To Do
 
 1. Union

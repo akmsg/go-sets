@@ -10,9 +10,9 @@ type Set struct {
 }
 
 // Add adds new items in the set
-func (s *Set) Add(elements ...interface{}) bool {
+func (s *Set) Add(elements ...interface{}) {
 	if 0 >= len(elements) {
-		return false
+		return
 	}
 
 	s.l.Lock()
@@ -21,13 +21,12 @@ func (s *Set) Add(elements ...interface{}) bool {
 	for _, element := range elements {
 		s.m[element] = dummyValue
 	}
-	return true
 }
 
 // Remove removes items from the Set
-func (s *Set) Remove(elements ...interface{}) bool {
+func (s *Set) Remove(elements ...interface{}) {
 	if 0 >= len(elements) {
-		return false
+		return
 	}
 
 	s.l.Lock()
@@ -36,7 +35,6 @@ func (s *Set) Remove(elements ...interface{}) bool {
 	for _, element := range elements {
 		delete(s.m, element)
 	}
-	return true
 }
 
 // List returns an enumeration of set elements
@@ -52,14 +50,19 @@ func (s *Set) List() []interface{} {
 }
 
 // Empty removes all the elements from the list
-func (s *Set) Empty() bool {
+func (s *Set) Empty() {
 	if 0 >= len(s.m) {
-		return false
+		return
 	}
 
 	s.l.Lock()
 	defer s.l.Unlock()
 
 	s.m = make(map[interface{}]struct{})
-	return true
+}
+
+// Contains will return true if the map has the key
+func (s *Set) Contains(element interface{}) bool {
+	_, status := s.m[element]
+	return status
 }
