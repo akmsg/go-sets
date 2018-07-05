@@ -50,3 +50,12 @@ func (s *Set) List() []interface{} {
 	}
 	return elements
 }
+
+// Empty removes all the elements from the list
+func (s *Set) Empty() bool {
+	if 0 >= len(s.m) {
+		return false
+	}
+	s = New()
+	return true
+}
