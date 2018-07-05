@@ -56,6 +56,10 @@ func (s *Set) Empty() bool {
 	if 0 >= len(s.m) {
 		return false
 	}
-	s = New()
+
+	s.l.Lock()
+	defer s.l.Unlock()
+
+	s.m = make(map[interface{}]struct{})
 	return true
 }
