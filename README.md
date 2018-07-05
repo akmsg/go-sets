@@ -1,16 +1,18 @@
-# Go Set
+# Go Set 
+
+[![Build Status](https://travis-ci.org/anandmishra01/go-sets.svg?branch=master)](https://travis-ci.org/anandmishra01/go-sets)
 
 A simple and easy to use implementation of **Set** in golang, with most of the usefull operations on them. 
 
 No need to worry about concurrency issues, this implementation is **thread safe**.
 
-# Installation
+## Installation
 
 ```sh
     go get github.com/anandmishra01/go-sets
 ```
 
-# In Nustshell
+## In Nustshell
 
 1. Create
 
@@ -43,7 +45,9 @@ No need to worry about concurrency issues, this implementation is **thread safe*
     s.Contains(1) // will return true if 1 is in s
 ```
 
-# To Do
+
+## To Do
+
 
 1. Union
 
