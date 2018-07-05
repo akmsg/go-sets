@@ -1,9 +1,10 @@
 package set
 
+// New creates a new set and populate it with items
+func New(elements ...interface{}) *Set {
+	s := &Set{m: make(map[interface{}]struct{})}
 
-type Set interface {
+	s.Add(elements...)
 
-	Add(items... interface{}) bool
-
-	Remove(items... interface{}) bool
+	return s
 }
