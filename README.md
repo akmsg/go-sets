@@ -1,4 +1,6 @@
-# Go Set
+# Go Set 
+
+[![Build Status](https://travis-ci.org/anandmishra01/go-sets.svg?branch=master)](https://travis-ci.org/anandmishra01/go-sets)
 
 A simple and easy to use implementation of **Set** in golang, with most of the usefull operations on them. 
 
