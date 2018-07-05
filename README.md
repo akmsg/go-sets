@@ -2,6 +2,10 @@
 
 Gives you an implementation of Set, with most of the usefull operations on them. No need to worry about concurrency issues it has been kept in mind while designing.
 
+# Installation
+
+go get github.com/anandmishra01/go-sets
+
 # In Nustshell
 
 1. Create
