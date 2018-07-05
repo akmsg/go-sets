@@ -22,3 +22,13 @@ Gives you an implementation of Set, with most of the usefull operations on them.
         s.Empty() // remove all the elements from the set
 
 #ToDo
+
+1. Union
+
+2. Intersection
+
+3. Difference
+
+4. Check Subset
+
+5. Check Equality
