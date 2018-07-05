@@ -6,13 +6,13 @@ A simple and easy to use implementation of **Set** in golang, with most of the u
 
 No need to worry about concurrency issues, this implementation is **thread safe**.
 
-# Installation
+## Installation
 
 ```sh
     go get github.com/anandmishra01/go-sets
 ```
 
-# In Nustshell
+## In Nustshell
 
 1. Create
 
@@ -39,7 +39,7 @@ No need to worry about concurrency issues, this implementation is **thread safe*
     s.Empty() // remove all the elements from the set
 ```
 
-# To Do
+## To Do
 
 1. Union
 
