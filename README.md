@@ -6,7 +6,9 @@ No need to worry about concurrency issues, this implementation is **thread safe*
 
 # Installation
 
+```sh
     go get github.com/anandmishra01/go-sets
+```
 
 # In Nustshell
 
