@@ -4,7 +4,7 @@ Gives you an implementation of Set, with most of the usefull operations on them.
 
 # Installation
 
-go get github.com/anandmishra01/go-sets
+    go get github.com/anandmishra01/go-sets
 
 # In Nustshell
 
