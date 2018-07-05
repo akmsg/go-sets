@@ -1,8 +1,8 @@
-#go-sets
+# go-sets
 
 Gives you an implementation of Set, with most of the usefull operations on them. No need to worry about concurrency issues it has been kept in mind while designing.
 
-#In Nustshell
+# In Nustshell
 
 1. Create
 
@@ -21,7 +21,7 @@ Gives you an implementation of Set, with most of the usefull operations on them.
 
         s.Empty() // remove all the elements from the set
 
-#ToDo
+# To Do
 
 1. Union
 
